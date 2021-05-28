@@ -27,7 +27,18 @@ juan = {
   },
   listaHabilidades: ["Dedicado", "Puntual", "Flexible"]
 }
-
+luis = {
+  nombre: "Luis Enrique Fernandez Reza",
+  bio: "Me llamo Luis Enrique , mis amigos me dicen kike"
+        + "Estudio en la facultad de ingenieria de la UACH." +
+        " Puedo hablar dos idiomas fluidos y un poco de un tercero. " ,
+  educacion: {
+    secundaria: "3008 Benito Juarez 2012-2015",
+    preparatoria: "CBTis 122 2015-2018",
+    universidad: "UACH 2018-En curso"
+  },
+  listaHabilidades: ["competitivo", "liderazgo", "tolerante"]
+}
 // s u s cvs
 
 const server = http.createServer((req, res) => {
