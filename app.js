@@ -3,9 +3,15 @@ const http = require('http');
 // Objetos globales a hacer JSON
 ruben = {
   nombre: "Ruben Dominguez Chavez",
-  bio: "Hola! Soy Ruben, un programador en desarrollo. Mi objetivo principal es aprender todo lo posible :).",
-  educacion: "TODO",
-  listaHailidades: ["TODO1", "TODO2", "TODO3"]
+  bio: "Hola! Soy Ruben, un programador en desarrollo. Mi objetivo principal es aprender todo lo posible."+
+       " Soy estudiante de ingenieria en ciencias de la computacion. Estoy en mi tercer semestre."+
+       " Me gusta desarrollar codigo para la web y espero ser un gran desarrollador algun dia.",
+  educacion: {
+    secundaria: "ESBIN 2012-2015",
+    preparatoria: "PrepaTec 2015-2018",
+    universidad: "UACH 2018-En curso"
+  },
+  listaHabilidades: ["Comunicativo", "Tolerante", "Flexible"]
 }
 
 // s u s cvs
