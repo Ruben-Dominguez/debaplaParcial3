@@ -26,6 +26,6 @@ const server = http.createServer((req, res) => {
     } else {
         res.end('Invalid request');
     }
-}).listen(8888);
+}).listen(process.env.PORT);
 
 console.log('Servidor corriendo en el puerto 8888');
