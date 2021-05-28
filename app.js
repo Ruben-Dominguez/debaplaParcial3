@@ -1,40 +1,25 @@
-const fs = require('fs');
 const http = require('http');
 
-// server creado en el puerto 8888
-http.createServer((request, response) =>{
-  // interpolacion de la ruta dada. default -> index.html
-  const file = request.url == "/" ? "./index.html" : `./${request.url}`;
-  fs.readFile(file, (error, data)=>{
-    if(error) {
-      response.writeHead(404, {"Content-Type":"text/plain"});
-      response.write("Not found :(");
-      response.end();
-    }
-    else {
-      const extension = file.split('.').pop();
-      switch (extension) {
-        case 'txt':
-          response.writeHead(200, {"Content-Type":"text/plain"});
-          break;
-        case 'html':
-          response.writeHead(200, {"Content-Type":"text/html"});
-          break;
-        case 'jpeg':
-          response.writeHead(200, {"Content-Type":"image/jpeg"});
-          break;
-        case 'css':
-          response.writeHead(200, {"Content-Type":"text/css"});
-          break;
-        case 'js':
-          response.writeHead(200, {"Content-Type":"text/javascript"});
-          break;
-        default:
-          response.writeHead(200, {"Content-Type":"text/plain"});
-      }
-      response.write(data);
-      response.end();
-    }
-  });
+// Objetos globales a hacer JSON
+ruben = {
+  nombre: "Ruben Dominguez Chavez",
+  bio: "Hola! Soy Ruben, un programador en desarrollo. Mi objetivo principal es aprender todo lo posible :).",
+  educacion: "TODO",
+  listaHailidades: ["TODO1", "TODO2", "TODO3"]
+}
 
+// s u s cvs
+
+const server = http.createServer((req, res) => {
+
+
+    if (req.url == '/329806') {
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.write(JSON.stringify(ruben));
+        res.end();
+    } else {
+        res.end('Invalid request');
+    }
 }).listen(8888);
+
+console.log('Servidor corriendo en el puerto 8888');
