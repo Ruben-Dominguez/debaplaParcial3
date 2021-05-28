@@ -1,4 +1,4 @@
-# Aplicaion Mobil de Curriculums
+# Aplicacion Mobil de Curriculums
 
 Proyecto Tercer Parcial - Una aplicacion mobil hecha en Android Studio con el lenguaje Java que despliega CVs agarrando la informacion de un json obtenida de un servidor Heroku por medio de la ruta de las matriculas de los alumnos
 
