@@ -4,22 +4,22 @@ const http = require('http');
 ruben = {
   nombre: "Ruben Dominguez Chavez",
   bio: "Hola! Soy Ruben, un programador en desarrollo. Mi objetivo principal es aprender todo lo posible."+
-       " Soy estudiante de ingenieria en ciencias de la computacion. Estoy en mi tercer semestre."+
+       " Soy estudiante de ingenieria en ciencias de la computacion. Estoy en mi sexto semestre."+
        " Me gusta desarrollar codigo para la web y espero ser un gran desarrollador algun dia.",
   educacion: {
     secundaria: "ESBIN 2012-2015",
     preparatoria: "PrepaTec 2015-2018",
     universidad: "UACH 2018-En curso"
   },
-  listaHabilidades: ["Comunicativo", "Tolerante", "Flexible"]
+  listaHabilidades: ["Comunicativo", "Tolerante", "Perfeccionista"]
 }
 
 juan = {
   nombre: "Juan Pablo Martinez Cantu",
-  bio: "Soy JP, un estudiante de la UACH en la carrera ciencias de la computación"
-        + " en la facultad de ingeniería. Soy bilingue y me gusta el anime." + 
-        " Puedo programar en varios lenguajes y paradigmas de programación. " + 
-        "Tengo interés en el desarrollo de aplicaciones y servicios web.",
+  bio: "Soy JP, un estudiante de la UACH en la carrera ciencias de la computacion"
+        + " en la facultad de ingenieria. Soy bilingue y me gusta el anime." +
+        " Puedo programar en varios lenguajes y paradigmas de programacion. " +
+        "Tengo interes en el desarrollo de aplicaciones y servicios web.",
   educacion: {
     secundaria: "Camino Real Middle School 2011-2014",
     preparatoria: "Onate High School 2014-2017",
